@@ -1,0 +1,720 @@
+doctype html
+html
+  head
+    title Project Money 2
+
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    <!-- Latest compiled and minified CSS -->
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+
+    <!-- Optional theme -->
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous")
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+    <!-- Latest compiled and minified JavaScript -->
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+
+    <!-- Font Awesome -->
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+
+    <!-- Slider Stylesheet -->
+    link(rel="stylesheet" type="text/css" href="rs-plugin/ccss/style.css" media="screen")
+    link(rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen")
+
+
+    <!-- Animate CSS -->
+    link(rel="stylesheet" href="assets/css/animate.css")
+
+    <!-- Slick Slider CSS -->
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+
+    <!-- Slick Slider Theme CSS -->
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
+
+    <!-- Stylesheet -->
+    link(rel="stylesheet" href="assets/css/master.css")
+
+  body
+    section#header
+      .header-container
+        .header-wrapper
+          //.left-abs-nav
+            .menu-toggle-wrapper
+              i.fa.fa-bars.bars
+              span.menu Menu
+
+            .menu-container
+              .menu-wrapper
+                .logo
+                .nav-wrapper
+                  .spacer
+                  nav.navigation
+                    ul.list-wrapper
+                      li.list-item.active Home
+                      li.list-item About
+                      li.list-item Blog
+                      li.list-item Gallery
+                      li.list-item Contact
+                  .spacer
+                .social-icons-wrapper
+                  i.fa.fa-facebook.icon.facebook
+                  i.fa.fa-twitter.icon.twitter
+                  i.fa.fa-youtube.icon.youtube
+
+          .top-nav
+            nav.navbar.navbar-default.navigation-wrapper
+              .container-fluid
+                .navbar-header
+                  a.navbar-brand.logo(href='#')
+                #nav-list
+                  ul.nav.navbar-nav.nav-list
+                    li.list-item.active
+                      a.list-item-link(href='#') Home
+                        span.sr-only (current)
+                    li.list-item
+                      a.list-item-link(href='#') About
+                    li.list-item
+                      a.list-item-link(href='#') Gallery
+                      ul.sub-nav-list
+                        li.sub-nav-list-item Gallery List
+                        li.sub-nav-list-item Gallery Grid
+                        li.sub-nav-list-item Gallery Masonry
+                    li.list-item
+                      a.list-item-link(href='#') Blog
+                    li.list-item
+                      a.list-item-link(href='#') Contact
+                    li.list-item
+                      a.list-item-link(href='#') About
+                    li.list-item
+                      a.list-item-link(href='#') Gallery
+                    li.list-item
+                      a.list-item-link(href='#') Blog
+                    li.list-item
+                      a.list-item-link(href='#') Contact
+
+
+          .full-nav
+            .menu-toggle-wrapper
+              i.fa.fa-bars.open
+              span.open  Menu
+              i.fa.fa-bars.cross
+              span.cross  Close
+            .nav-wrapper
+              .container-animation-1
+              .container-animation-2
+              ul.nav-list
+                li.nav-list-item Home
+                li.nav-list-item Home
+                li.nav-list-item Home
+                li.nav-list-item Home
+                li.nav-list-item Home
+              .social-icons-wrapper
+                i.fa.fa-facebook.icon.facebook
+                i.fa.fa-twitter.icon.twitter
+                i.fa.fa-youtube.icon.youtube
+            .logo-wrapper
+              .container-animation-1
+              .container-animation-2
+              img.logo(src="assets/imgs/logo.png")
+
+          //.top-rows-navigation
+            .header-wrapper
+              .container-fluid
+                .row
+                  .col-xs-12.no-padding
+                    .logo-wrapper
+                      a.logo-link
+                        img.logo(src="logo.svg")
+            .nav-wrapper
+              .container-fluid
+                .row
+                  .col-sm-12.no-padding
+                    nav.nav-content
+                      .mobile-nav
+                        .burger-icon
+                          .bar-icon
+                          .bar-icon
+                          .bar-icon
+                      ul.nav-list
+                        li.nav-list-item
+                          a.nav-list-item-link(href="#") Home
+
+                          ul.nav-sublist
+                            .container-fluid.no-padding
+                              .row
+                                .col-sm-12
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+
+                        li.nav-list-item
+                          a.nav-list-item-link(href="#") Home
+                          ul.nav-sublist
+                            .container-fluid
+                              .row
+                                .col-sm-3
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                .col-sm-3
+                                  h3.title Hi
+                                  img.logo(src="logo.svg")
+                                .col-sm-3
+                                  h3.title Hi
+                                  img.logo(src="logo.svg")
+                                .col-sm-3
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                        li.nav-list-item
+                          a.nav-list-item-link(href="#") Home
+                        li.nav-list-item
+                          a.nav-list-item-link(href="#") Home
+                        li.nav-list-item
+                          a.nav-list-item-link(href="#") Home
+
+                          ul.nav-sublist
+                            .container-fluid
+                              .row
+                                .col-sm-3
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                .col-sm-3
+                                  h3.title Hi
+                                  img.logo(src="logo.svg")
+                                .col-sm-3
+                                  h3.title Hi
+                                  img.logo(src="logo.svg")
+                                .col-sm-3
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+                                  li.nav-sublist-item
+                                    a.nav-sublist-item-link(href="#") Home
+
+          .tp-banner-container
+            .tp-banner
+              ul
+                // SLIDE
+                li(data-transition='fade', data-slotamount='1', data-masterspeed='1500')
+                  // MAIN IMAGE
+                  img(src='assets/imgs/header-background-1.png', alt='slidebg1', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+                  // LAYERS
+
+                  // LAYER NR. 1
+                  .tp-caption.white.fadein.fadeout.header-title(data-x='center', data-y='170', data-speed='5000', data-start='1200', data-easing='Power4.easeOut')
+                    | Dealicously Ediable
+                  .tp-caption.white.fadein.fadeout.header-subtitle(data-x='center', data-y='350', data-speed='1300', data-start='1200', data-easing='Power4.easeOut')
+                    | Baking the World One Cake at a Time
+                  button.tp-caption.white.fadein.fadeout.btn.header-button(data-x='center', data-y='480', data-speed='1400', data-start='1200', data-easing='Power4.easeOut')
+                    | Sign Up Now
+
+
+                // SLIDE
+                li(data-transition='slideup', data-slotamount='7', data-masterspeed='1500')
+                  // MAIN IMAGE
+                  img(src='assets/imgs/header-background-2.png', alt='slidebg1', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+                  // LAYERS
+                  // LAYER NR. 1
+                  .tp-caption.white.fadein.sft.fadeout.header-title(data-x='center', data-y='170', data-speed='6000', data-start='1200', data-easing='Power4.easeOut')
+                    | Dealicously Ediable
+                  .tp-caption.white.fadein.sft.fadeout.header-subtitle(data-x='center', data-y='350', data-speed='5000', data-start='1200', data-easing='Power4.easeOut')
+                    | Baking the World One Cake at a Time
+                  button.tp-caption.white.fadein.sft.fadeout.btn.header-button(data-x='center', data-y='480', data-speed='4000', data-start='1200', data-easing='Power4.easeOut')
+                    | Sign Up Now
+
+                // SLIDE
+                li(data-transition='fadetoleftfadefromright', data-slotamount='7', data-masterspeed='1500')
+                  // MAIN IMAGE
+                  img(src='assets/imgs/header-background-3.png', alt='slidebg1', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+                  // LAYERS
+                  // LAYER NR. 1
+                  .tp-caption.white.fadein.sfb.fadeout.header-title(data-x='center', data-y='170', data-speed='4000', data-start='1000', data-easing='Power4.easeOut')
+                    | Dealicously Ediable
+                  .tp-caption.white.fadein.sfb.fadeout.header-subtitle(data-x='center', data-y='350', data-speed='4200', data-start='1500', data-easing='Power4.easeOut')
+                    | Baking the World One Cake at a Time
+                  button.tp-caption.white.fadein.sfb.fadeout.btn.header-button(data-x='center', data-y='480', data-speed='4300', data-start='1800', data-easing='Power4.easeOut')
+                    | Sign Up Now
+
+
+
+    //section#about
+      .about-container
+        .container
+          .row
+            .col-sm-6.col-xs-12.no-padding
+              .about-wrapper
+                img.about-background(src="assets/imgs/cake-background.png")
+                .cake-1-line
+                img.cake-1(src="assets/imgs/cake-1.png")
+                .cake-2-line
+                img.cake-2(src="assets/imgs/cake-2.png")
+                .cake-3-line
+                img.cake-3(src="assets/imgs/cake-3.png")
+                img.hand-1(src="assets/imgs/hand-1.png")
+                img.hand-2(src="assets/imgs/hand-2.png")
+            .col-sm-6.col-sm-6.col-xs-12.no-padding
+              .section-title-wrapper
+                h1.section-title-background About Us
+                h3.section-title About Us
+              p.section-paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+    section#gallery
+      .gallery-container
+        .gallery-wrapper
+          .container
+            .section-title-wrapper
+              h1.section-title-background Gallery
+              h3.section-title Gallery
+            .categories
+              a.category.active-category Demo
+              a.category Cupcakes
+              a.category Cupcakes
+              a.category Cupcakes
+              a.category Cupcakes
+            .gallery-grid
+              .gallery-grid-item.grid-item-width-1.grid-item-height-1
+              .gallery-grid-item.grid-item-width-1.grid-item-height-3
+              .gallery-grid-item.grid-item-width-4.grid-item-height-5
+
+              .gallery-grid-item.grid-item-width-2.grid-item-height-2
+              .gallery-grid-item.grid-item-width-2.grid-item-height-2
+              .gallery-grid-item.grid-item-width-4.grid-item-height-5
+              .gallery-grid-item.grid-item-width-1.grid-item-height-6
+              .gallery-grid-item.grid-item-width-3.grid-item-height-6
+              .gallery-grid-item.grid-item-width-3.grid-item-height-6
+
+
+
+    section#team
+      .team-wrapper
+        .container-fluid
+          .row
+            .col-sm-6.col-md-4.no-padding
+              .team-member
+                .img-1
+                .overlay
+                  .team-meta
+                    h2.title Michael Ackermann
+                    h3.subtitle Lead Designer
+                    .social-icons
+                      i.fa.fa-twitter.social-icon
+                      i.fa.fa-facebook.social-icon
+                      i.fa.fa-linkedin.social-icon
+
+            .col-sm-6.col-md-4.no-padding
+              .team-member
+                .img-3
+                .overlay
+                  .team-meta
+                    h2.title Michael Ackermann
+                    h3.subtitle Lead Designer
+                    .social-icons
+                      i.fa.fa-twitter.social-icon
+                      i.fa.fa-facebook.social-icon
+                      i.fa.fa-linkedin.social-icon
+            .col-sm-12.col-md-4.no-padding
+              .team-member
+                .img-4
+                .overlay
+                  .team-meta
+                    h2.title Michael Ackermann
+                    h3.subtitle Lead Designer
+                    .social-icons
+                      i.fa.fa-twitter.social-icon
+                      i.fa.fa-facebook.social-icon
+                      i.fa.fa-linkedin.social-icon
+
+
+    section#contact
+      .contact-container
+        .contact-wrapper
+          .container-fluid.no-padding
+            .contact-info-container
+              .contact-info-wrapper
+                .contact-info-wrapper-meta
+                  .contactus Contact Us
+                  .divider /
+                  .info Info
+                .forms
+                  form.form-wrapper.form-horizontal
+                    .col-sm-12
+                      input.form-control.form-style#Name(type="Name" placeholder="Your Name")
+                      input.form-control.form-style#Name(type="Name" placeholder="Your Name")
+                      textarea.form-control.form-style(placeholder="Text" rows="6")
+            #GoogleMaps
+              iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14305.263989161478!2d50.1472323!3d26.31626535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7eed7f07f90d4b2e!2sSaudi+Aramco+Employment+Center!5e0!3m2!1sen!2ssa!4v1474809868400', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+    section#callback
+      .callback-container
+        .callback-wrapper
+          .callback-meta-wrapper
+            h2.title Tell us about your favourite reciepe
+            .callback-meta-2-wrapper
+              h3.subtitle So we can make it with
+              i.fa.fa-heart.icon
+            button.btn.button Contact Us
+
+
+    section#whyus
+      .whyus-container
+        .whyus-wrapper
+          .container
+            .section-title-wrapper
+              h1.section-title-background Why Us
+              h3.section-title Why Us
+            .row
+              .col-sm-4
+                .whyus-content-wrapper
+                  .img-wrapper
+                    .img-1
+                    .img-1-backup
+                  h3.title Custom Design
+                  p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  span
+                  span.borders
+              .col-sm-4
+                .whyus-content-wrapper
+                  .img-wrapper
+                    .img-2
+                    .img-2-backup
+                  h3.title Payment
+                  p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  span
+                  span.borders
+              .col-sm-4
+                .whyus-content-wrapper
+                  .img-wrapper
+                    .img-3
+                    .img-3-backup
+                  h3.title Delivery
+                  p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  span
+                  span.borders
+
+
+
+    section#shop
+      .shop-container
+        .shop-wrapper
+          .container
+            .section-title-wrapper
+              h1.section-title-background The Shop
+              h3.section-title The Shop
+              .title-background
+            .row
+              .col-sm-4
+                .item-container-small
+                  .item-1-picture
+                  .price $70
+                  h2.item-title Custom Cupcakes
+                  button.btn.button Make it real
+              .col-sm-4
+                .item-container-small
+                  .item-1-picture
+                  .price $70
+                  h2.item-title Custom Cupcakes
+                  button.btn.button Make it real
+              .col-sm-4
+                .item-container-small
+                  .item-1-picture
+                  .price $70
+                  h2.item-title Custom Cupcakes
+                  button.btn.button Make it real
+            .row
+              .col-sm-8
+                .item-container-big
+                  .col-sm-6.no-padding
+                    .item-4-picture
+                    .price $70
+                  .col-sm-6
+                    .meta-wrapper
+                      h2.item-title Custom Cupcakes
+                      p.item-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      button.btn.button Make it real
+              .col-sm-4
+                .item-container-small
+                  .item-1-picture
+                  .price $70
+                  h2.item-title Custom Cupcakes
+                  button.btn.button Make it real
+
+
+    section#blog
+      .blog-container
+        .blog-wrapper
+          .container
+            .section-title-wrapper
+              h1.section-title-background The Blog
+              h3.section-title The Blog
+            .row
+              .col-sm-6
+                .blog-item-wrapper.clearfix
+                  .col-sm-6.no-padding
+                    .blog-picture-wrapper
+                      .img
+                      .date-wrapper
+                        .date 13
+                        .month September
+                  .col-sm-6
+                    .blog-content-wrapper
+                      h3.blog-title Morning Bakery
+                      .blog-meta-wrapper
+                        i.fa.fa-comments.icon
+                        h6.comments 3 comments
+                        //i.fa.fa-man.icon
+                        //h6.comments 3 comments
+                        i.fa.fa-link.icon
+                        h6.comments 3 comments
+                      p.blog-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .button.btn Read More
+              .col-sm-6
+                .blog-item-wrapper.clearfix
+                  .col-sm-6.no-padding
+                    .blog-picture-wrapper
+                      .img
+                      .date-wrapper
+                        .date 13
+                        .month September
+                  .col-sm-6
+                    .blog-content-wrapper
+                      h3.blog-title Morning Bakery
+                      .blog-meta-wrapper
+                        i.fa.fa-comments.icon
+                        h6.comments 3 comments
+                        //i.fa.fa-man.icon
+                        //h6.comments 3 comments
+                        i.fa.fa-link.icon
+                        h6.comments 3 comments
+                      p.blog-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .button.btn Read More
+
+            .row
+              .col-sm-6
+                .blog-item-wrapper.clearfix
+                  .col-sm-6.no-padding
+                    .blog-picture-wrapper
+                      .img
+                      .date-wrapper
+                        .date 13
+                        .month September
+                  .col-sm-6
+                    .blog-content-wrapper
+                      h3.blog-title Morning Bakery
+                      .blog-meta-wrapper
+                        i.fa.fa-comments.icon
+                        h6.comments 3 comments
+                        //i.fa.fa-man.icon
+                        //h6.comments 3 comments
+                        i.fa.fa-link.icon
+                        h6.comments 3 comments
+                      p.blog-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .button.btn Read More
+              .col-sm-6
+                .blog-item-wrapper.clearfix
+                  .col-sm-6.no-padding
+                    .blog-picture-wrapper
+                      .img
+                      .date-wrapper
+                        .date 13
+                        .month September
+                  .col-sm-6
+                    .blog-content-wrapper
+                      h3.blog-title Morning Bakery
+                      .blog-meta-wrapper
+                        i.fa.fa-comments.icon
+                        h6.comments 3 comments
+                        //i.fa.fa-man.icon
+                        //h6.comments 3 comments
+                        i.fa.fa-link.icon
+                        h6.comments 3 comments
+                      p.blog-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .button.btn Read More
+
+
+
+
+    //section#testimonial
+      .testimonial-container
+        .testimonial-wrapper
+          .container
+            .row
+              .col-sm-12
+                .testimonial-block
+                  .testimonial-person
+                    .picture
+                    h3.name Mohammed Alhazmi
+                    h5.title Adobe San Francisco
+                  .testimonial-content
+                    p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .testimonial-timeline
+
+
+    //section#offer
+      .offer-container
+        .offer-wrapper
+          .container.no-padding
+            .row
+              .col-sm-6
+                .offer-img-wrapper
+                  img.img(src="assets/imgs/offer.png")
+              .col-sm-6.no-padding
+                .offer-meta-wrapper
+                  h2.offer-title Hurry Up
+                  h4.offer-subtitle Get our weekly updates and our
+                    span  20%
+                    |  off promotions
+                  form.form-inline
+                    .form-group
+                      input#email.form-control(type="email" placeholder="E-mail")
+                      button.btn.button Join Us
+
+
+    section#instagram
+      .instagram-container
+        .instagram-wrapper
+
+            .instagram-img-1
+            .instagram-img-2
+            .instagram-img-3
+            .instagram-img-4
+            .instagram-img-5
+            .instagram-img-6
+            .instagram-img-1
+            .instagram-img-2
+            .instagram-img-3
+            .instagram-img-4
+            .instagram-img-5
+            .instagram-img-6
+
+
+
+
+    section#footer
+      .footer-container
+        .footer-wrapper
+          .container
+            .row.border-bottom
+              .col-sm-4
+                h2.title About us
+                p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              .col-sm-4
+                  h2.title Follow us
+                  .social-icons-wrapper
+                    i.fa.fa-twitter.social-icon
+                    i.fa.fa-instagram.social-icon
+                    i.fa.fa-facebook.social-icon
+                    i.fa.fa-youtube.social-icon
+              .col-sm-4
+                h2.title Contact us
+                .icon-wrapper
+                  i.fa.fa-map-marker.icon
+                  p.content Shift, 2500 Market Street, San Francisco, CA 94114, USA
+                .icon-wrapper
+                  i.fa.fa-envelope-o.icon
+                  p.content MHD.alhazmi@gmail.com
+                .icon-wrapper
+                  i.fa.fa-mobile.icon
+                  p.content +966 5555 39344
+        .container
+          .row
+            p.copyrights Copy rights 2016 Mohammed Alhazmi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Latest compiled and minified Jquery -->
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+    <!-- Latest compiled and minified ScrollMgic -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js")
+
+    <!-- Latest compiled and minified ScrollMgic Indicators -->
+    script(src="/https:/cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
+
+    <!-- Latest compiled and minified ScrollMgic GSAP Plugin -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js")
+
+    <!-- Latest compiled and minified GSAP -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+
+    <!-- Latest compiled and minified GSAP -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js")
+
+    <!-- Latest compiled and minified Bootstrap -->
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+
+    <!-- Latest compiled and minified CountUp -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js")
+
+    <!-- Slider Js -->
+    script(type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js")
+    script(type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js")
+
+    <!-- Isotope Js -->
+    script(src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js")
+
+    <!-- Slick Slider Js -->
+    script(type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+
+
+    <!-- Master JS -->
+    script(src="assets/js/main.js")

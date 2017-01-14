@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Money 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script><!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"><!-- Slider Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/ccss/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen"><!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css"><!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"><!-- Slick Slider Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"><!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/master.css">
+  </head>
+  <body>
+    <section id="header">
+      <div class="header-container">
+        <div class="header-wrapper">
+          <!--.left-abs-nav
+          .menu-toggle-wrapper
+            i.fa.fa-bars.bars
+            span.menu Menu
+          
+          .menu-container
+            .menu-wrapper
+              .logo
+              .nav-wrapper
+                .spacer
+                nav.navigation
+                  ul.list-wrapper
+                    li.list-item.active Home
+                    li.list-item About
+                    li.list-item Blog
+                    li.list-item Gallery
+                    li.list-item Contact
+                .spacer
+              .social-icons-wrapper
+                i.fa.fa-facebook.icon.facebook
+                i.fa.fa-twitter.icon.twitter
+                i.fa.fa-youtube.icon.youtube
+          
+          -->
+          <div class="top-nav">
+            <nav class="navbar navbar-default navigation-wrapper">
+              <div class="container-fluid">
+                <div class="navbar-header"><a href="#" class="navbar-brand logo"></a></div>
+                <div id="nav-list">
+                  <ul class="nav navbar-nav nav-list">
+                    <li class="list-item active"><a href="#" class="list-item-link">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">About</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">Gallery</a>
+                      <ul class="sub-nav-list">
+                        <li class="sub-nav-list-item">Gallery List</li>
+                        <li class="sub-nav-list-item">Gallery Grid</li>
+                        <li class="sub-nav-list-item">Gallery Masonry</li>
+                      </ul>
+                    </li>
+                    <li class="list-item"><a href="#" class="list-item-link">Blog</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">Contact</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">About</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">Gallery</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">Blog</a></li>
+                    <li class="list-item"><a href="#" class="list-item-link">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="full-nav">
+            <div class="menu-toggle-wrapper"><i class="fa fa-bars open"></i><span class="open"> Menu</span><i class="fa fa-bars cross"></i><span class="cross"> Close</span></div>
+            <div class="nav-wrapper">
+              <div class="container-animation-1"></div>
+              <div class="container-animation-2"></div>
+              <ul class="nav-list">
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">Home</li>
+                <li class="nav-list-item">Home</li>
+              </ul>
+              <div class="social-icons-wrapper"><i class="fa fa-facebook icon facebook"></i><i class="fa fa-twitter icon twitter"></i><i class="fa fa-youtube icon youtube"></i></div>
+            </div>
+            <div class="logo-wrapper">
+              <div class="container-animation-1"></div>
+              <div class="container-animation-2"></div><img src="assets/imgs/logo.png" class="logo">
+            </div>
+          </div>
+          <!--.top-rows-navigation
+          .header-wrapper
+            .container-fluid
+              .row
+                .col-xs-12.no-padding
+                  .logo-wrapper
+                    a.logo-link
+                      img.logo(src="logo.svg")
+          .nav-wrapper
+            .container-fluid
+              .row
+                .col-sm-12.no-padding
+                  nav.nav-content
+                    .mobile-nav
+                      .burger-icon
+                        .bar-icon
+                        .bar-icon
+                        .bar-icon
+                    ul.nav-list
+                      li.nav-list-item
+                        a.nav-list-item-link(href="#") Home
+          
+                        ul.nav-sublist
+                          .container-fluid.no-padding
+                            .row
+                              .col-sm-12
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+          
+                      li.nav-list-item
+                        a.nav-list-item-link(href="#") Home
+                        ul.nav-sublist
+                          .container-fluid
+                            .row
+                              .col-sm-3
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                              .col-sm-3
+                                h3.title Hi
+                                img.logo(src="logo.svg")
+                              .col-sm-3
+                                h3.title Hi
+                                img.logo(src="logo.svg")
+                              .col-sm-3
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                      li.nav-list-item
+                        a.nav-list-item-link(href="#") Home
+                      li.nav-list-item
+                        a.nav-list-item-link(href="#") Home
+                      li.nav-list-item
+                        a.nav-list-item-link(href="#") Home
+          
+                        ul.nav-sublist
+                          .container-fluid
+                            .row
+                              .col-sm-3
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                              .col-sm-3
+                                h3.title Hi
+                                img.logo(src="logo.svg")
+                              .col-sm-3
+                                h3.title Hi
+                                img.logo(src="logo.svg")
+                              .col-sm-3
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+                                li.nav-sublist-item
+                                  a.nav-sublist-item-link(href="#") Home
+          
+          -->
+          <div class="tp-banner-container">
+            <div class="tp-banner">
+              <ul>
+                <!-- SLIDE-->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1500">
+                  <!-- MAIN IMAGE--><img src="assets/imgs/header-background-1.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                  <!-- LAYERS-->
+                  <!-- LAYER NR. 1-->
+                  <div data-x="center" data-y="170" data-speed="5000" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein fadeout header-title">Dealicously Ediable</div>
+                  <div data-x="center" data-y="350" data-speed="1300" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein fadeout header-subtitle">Baking the World One Cake at a Time</div>
+                  <button data-x="center" data-y="480" data-speed="1400" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein fadeout btn header-button">Sign Up Now</button>
+                </li>
+                <!-- SLIDE-->
+                <li data-transition="slideup" data-slotamount="7" data-masterspeed="1500">
+                  <!-- MAIN IMAGE--><img src="assets/imgs/header-background-2.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                  <!-- LAYERS-->
+                  <!-- LAYER NR. 1-->
+                  <div data-x="center" data-y="170" data-speed="6000" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein sft fadeout header-title">Dealicously Ediable</div>
+                  <div data-x="center" data-y="350" data-speed="5000" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein sft fadeout header-subtitle">Baking the World One Cake at a Time</div>
+                  <button data-x="center" data-y="480" data-speed="4000" data-start="1200" data-easing="Power4.easeOut" class="tp-caption white fadein sft fadeout btn header-button">Sign Up Now</button>
+                </li>
+                <!-- SLIDE-->
+                <li data-transition="fadetoleftfadefromright" data-slotamount="7" data-masterspeed="1500">
+                  <!-- MAIN IMAGE--><img src="assets/imgs/header-background-3.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                  <!-- LAYERS-->
+                  <!-- LAYER NR. 1-->
+                  <div data-x="center" data-y="170" data-speed="4000" data-start="1000" data-easing="Power4.easeOut" class="tp-caption white fadein sfb fadeout header-title">Dealicously Ediable</div>
+                  <div data-x="center" data-y="350" data-speed="4200" data-start="1500" data-easing="Power4.easeOut" class="tp-caption white fadein sfb fadeout header-subtitle">Baking the World One Cake at a Time</div>
+                  <button data-x="center" data-y="480" data-speed="4300" data-start="1800" data-easing="Power4.easeOut" class="tp-caption white fadein sfb fadeout btn header-button">Sign Up Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section#about
+    .about-container
+      .container
+        .row
+          .col-sm-6.col-xs-12.no-padding
+            .about-wrapper
+              img.about-background(src="assets/imgs/cake-background.png")
+              .cake-1-line
+              img.cake-1(src="assets/imgs/cake-1.png")
+              .cake-2-line
+              img.cake-2(src="assets/imgs/cake-2.png")
+              .cake-3-line
+              img.cake-3(src="assets/imgs/cake-3.png")
+              img.hand-1(src="assets/imgs/hand-1.png")
+              img.hand-2(src="assets/imgs/hand-2.png")
+          .col-sm-6.col-sm-6.col-xs-12.no-padding
+            .section-title-wrapper
+              h1.section-title-background About Us
+              h3.section-title About Us
+            p.section-paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+    
+    -->
+    <section id="gallery">
+      <div class="gallery-container">
+        <div class="gallery-wrapper">
+          <div class="container">
+            <div class="section-title-wrapper">
+              <h1 class="section-title-background">Gallery</h1>
+              <h3 class="section-title">Gallery</h3>
+            </div>
+            <div class="categories"><a class="category active-category">Demo</a><a class="category">Cupcakes</a><a class="category">Cupcakes</a><a class="category">Cupcakes</a><a class="category">Cupcakes</a></div>
+            <div class="gallery-grid">
+              <div class="gallery-grid-item grid-item-width-1 grid-item-height-1"></div>
+              <div class="gallery-grid-item grid-item-width-1 grid-item-height-3"></div>
+              <div class="gallery-grid-item grid-item-width-4 grid-item-height-5"></div>
+              <div class="gallery-grid-item grid-item-width-2 grid-item-height-2"></div>
+              <div class="gallery-grid-item grid-item-width-2 grid-item-height-2"></div>
+              <div class="gallery-grid-item grid-item-width-4 grid-item-height-5"></div>
+              <div class="gallery-grid-item grid-item-width-1 grid-item-height-6"></div>
+              <div class="gallery-grid-item grid-item-width-3 grid-item-height-6"></div>
+              <div class="gallery-grid-item grid-item-width-3 grid-item-height-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <div class="team-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 no-padding">
+              <div class="team-member">
+                <div class="img-1"></div>
+                <div class="overlay">
+                  <div class="team-meta">
+                    <h2 class="title">Michael Ackermann</h2>
+                    <h3 class="subtitle">Lead Designer</h3>
+                    <div class="social-icons"><i class="fa fa-twitter social-icon"></i><i class="fa fa-facebook social-icon"></i><i class="fa fa-linkedin social-icon"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 no-padding">
+              <div class="team-member">
+                <div class="img-3"></div>
+                <div class="overlay">
+                  <div class="team-meta">
+                    <h2 class="title">Michael Ackermann</h2>
+                    <h3 class="subtitle">Lead Designer</h3>
+                    <div class="social-icons"><i class="fa fa-twitter social-icon"></i><i class="fa fa-facebook social-icon"></i><i class="fa fa-linkedin social-icon"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 no-padding">
+              <div class="team-member">
+                <div class="img-4"></div>
+                <div class="overlay">
+                  <div class="team-meta">
+                    <h2 class="title">Michael Ackermann</h2>
+                    <h3 class="subtitle">Lead Designer</h3>
+                    <div class="social-icons"><i class="fa fa-twitter social-icon"></i><i class="fa fa-facebook social-icon"></i><i class="fa fa-linkedin social-icon"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-wrapper">
+          <div class="container-fluid no-padding">
+            <div class="contact-info-container">
+              <div class="contact-info-wrapper">
+                <div class="contact-info-wrapper-meta">
+                  <div class="contactus">Contact Us</div>
+                  <div class="divider">/</div>
+                  <div class="info">Info</div>
+                </div>
+                <div class="forms">
+                  <form class="form-wrapper form-horizontal">
+                    <div class="col-sm-12">
+                      <input id="Name" type="Name" placeholder="Your Name" class="form-control form-style">
+                      <input id="Name" type="Name" placeholder="Your Name" class="form-control form-style">
+                      <textarea placeholder="Text" rows="6" class="form-control form-style"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="GoogleMaps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14305.263989161478!2d50.1472323!3d26.31626535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7eed7f07f90d4b2e!2sSaudi+Aramco+Employment+Center!5e0!3m2!1sen!2ssa!4v1474809868400" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="callback">
+      <div class="callback-container">
+        <div class="callback-wrapper">
+          <div class="callback-meta-wrapper">
+            <h2 class="title">Tell us about your favourite reciepe</h2>
+            <div class="callback-meta-2-wrapper">
+              <h3 class="subtitle">So we can make it with</h3><i class="fa fa-heart icon"></i>
+            </div>
+            <button class="btn button">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="whyus">
+      <div class="whyus-container">
+        <div class="whyus-wrapper">
+          <div class="container">
+            <div class="section-title-wrapper">
+              <h1 class="section-title-background">Why Us</h1>
+              <h3 class="section-title">Why Us</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="whyus-content-wrapper">
+                  <div class="img-wrapper">
+                    <div class="img-1"></div>
+                    <div class="img-1-backup"></div>
+                  </div>
+                  <h3 class="title">Custom Design</h3>
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><span></span><span class="borders"></span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="whyus-content-wrapper">
+                  <div class="img-wrapper">
+                    <div class="img-2"></div>
+                    <div class="img-2-backup"></div>
+                  </div>
+                  <h3 class="title">Payment</h3>
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><span></span><span class="borders"></span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="whyus-content-wrapper">
+                  <div class="img-wrapper">
+                    <div class="img-3"></div>
+                    <div class="img-3-backup"></div>
+                  </div>
+                  <h3 class="title">Delivery</h3>
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><span></span><span class="borders"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="shop">
+      <div class="shop-container">
+        <div class="shop-wrapper">
+          <div class="container">
+            <div class="section-title-wrapper">
+              <h1 class="section-title-background">The Shop</h1>
+              <h3 class="section-title">The Shop</h3>
+              <div class="title-background"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="item-container-small">
+                  <div class="item-1-picture"></div>
+                  <div class="price">$70</div>
+                  <h2 class="item-title">Custom Cupcakes</h2>
+                  <button class="btn button">Make it real</button>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item-container-small">
+                  <div class="item-1-picture"></div>
+                  <div class="price">$70</div>
+                  <h2 class="item-title">Custom Cupcakes</h2>
+                  <button class="btn button">Make it real</button>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item-container-small">
+                  <div class="item-1-picture"></div>
+                  <div class="price">$70</div>
+                  <h2 class="item-title">Custom Cupcakes</h2>
+                  <button class="btn button">Make it real</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="item-container-big">
+                  <div class="col-sm-6 no-padding">
+                    <div class="item-4-picture"></div>
+                    <div class="price">$70</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="meta-wrapper">
+                      <h2 class="item-title">Custom Cupcakes</h2>
+                      <p class="item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <button class="btn button">Make it real</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item-container-small">
+                  <div class="item-1-picture"></div>
+                  <div class="price">$70</div>
+                  <h2 class="item-title">Custom Cupcakes</h2>
+                  <button class="btn button">Make it real</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="blog-container">
+        <div class="blog-wrapper">
+          <div class="container">
+            <div class="section-title-wrapper">
+              <h1 class="section-title-background">The Blog</h1>
+              <h3 class="section-title">The Blog</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="blog-item-wrapper clearfix">
+                  <div class="col-sm-6 no-padding">
+                    <div class="blog-picture-wrapper">
+                      <div class="img"></div>
+                      <div class="date-wrapper">
+                        <div class="date">13</div>
+                        <div class="month">September</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="blog-content-wrapper">
+                      <h3 class="blog-title">Morning Bakery</h3>
+                      <div class="blog-meta-wrapper"><i class="fa fa-comments icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                        <!--i.fa.fa-man.icon-->
+                        <!--h6.comments 3 comments--><i class="fa fa-link icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                      </div>
+                      <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="button btn">Read More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="blog-item-wrapper clearfix">
+                  <div class="col-sm-6 no-padding">
+                    <div class="blog-picture-wrapper">
+                      <div class="img"></div>
+                      <div class="date-wrapper">
+                        <div class="date">13</div>
+                        <div class="month">September</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="blog-content-wrapper">
+                      <h3 class="blog-title">Morning Bakery</h3>
+                      <div class="blog-meta-wrapper"><i class="fa fa-comments icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                        <!--i.fa.fa-man.icon-->
+                        <!--h6.comments 3 comments--><i class="fa fa-link icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                      </div>
+                      <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="button btn">Read More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="blog-item-wrapper clearfix">
+                  <div class="col-sm-6 no-padding">
+                    <div class="blog-picture-wrapper">
+                      <div class="img"></div>
+                      <div class="date-wrapper">
+                        <div class="date">13</div>
+                        <div class="month">September</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="blog-content-wrapper">
+                      <h3 class="blog-title">Morning Bakery</h3>
+                      <div class="blog-meta-wrapper"><i class="fa fa-comments icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                        <!--i.fa.fa-man.icon-->
+                        <!--h6.comments 3 comments--><i class="fa fa-link icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                      </div>
+                      <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="button btn">Read More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="blog-item-wrapper clearfix">
+                  <div class="col-sm-6 no-padding">
+                    <div class="blog-picture-wrapper">
+                      <div class="img"></div>
+                      <div class="date-wrapper">
+                        <div class="date">13</div>
+                        <div class="month">September</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="blog-content-wrapper">
+                      <h3 class="blog-title">Morning Bakery</h3>
+                      <div class="blog-meta-wrapper"><i class="fa fa-comments icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                        <!--i.fa.fa-man.icon-->
+                        <!--h6.comments 3 comments--><i class="fa fa-link icon"></i>
+                        <h6 class="comments">3 comments</h6>
+                      </div>
+                      <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="button btn">Read More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section#testimonial
+    .testimonial-container
+      .testimonial-wrapper
+        .container
+          .row
+            .col-sm-12
+              .testimonial-block
+                .testimonial-person
+                  .picture
+                  h3.name Mohammed Alhazmi
+                  h5.title Adobe San Francisco
+                .testimonial-content
+                  p.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonial-timeline
+    
+    
+    -->
+    <!--section#offer
+    .offer-container
+      .offer-wrapper
+        .container.no-padding
+          .row
+            .col-sm-6
+              .offer-img-wrapper
+                img.img(src="assets/imgs/offer.png")
+            .col-sm-6.no-padding
+              .offer-meta-wrapper
+                h2.offer-title Hurry Up
+                h4.offer-subtitle Get our weekly updates and our
+                  span  20%
+                  |  off promotions
+                form.form-inline
+                  .form-group
+                    input#email.form-control(type="email" placeholder="E-mail")
+                    button.btn.button Join Us
+    
+    
+    -->
+    <section id="instagram">
+      <div class="instagram-container">
+        <div class="instagram-wrapper">
+          <div class="instagram-img-1"></div>
+          <div class="instagram-img-2"></div>
+          <div class="instagram-img-3"></div>
+          <div class="instagram-img-4"></div>
+          <div class="instagram-img-5"></div>
+          <div class="instagram-img-6"></div>
+          <div class="instagram-img-1"></div>
+          <div class="instagram-img-2"></div>
+          <div class="instagram-img-3"></div>
+          <div class="instagram-img-4"></div>
+          <div class="instagram-img-5"></div>
+          <div class="instagram-img-6"></div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="container">
+            <div class="row border-bottom">
+              <div class="col-sm-4">
+                <h2 class="title">About us</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+              </div>
+              <div class="col-sm-4">
+                <h2 class="title">Follow us</h2>
+                <div class="social-icons-wrapper"><i class="fa fa-twitter social-icon"></i><i class="fa fa-instagram social-icon"></i><i class="fa fa-facebook social-icon"></i><i class="fa fa-youtube social-icon"></i></div>
+              </div>
+              <div class="col-sm-4">
+                <h2 class="title">Contact us</h2>
+                <div class="icon-wrapper"><i class="fa fa-map-marker icon"></i>
+                  <p class="content">Shift, 2500 Market Street, San Francisco, CA 94114, USA</p>
+                </div>
+                <div class="icon-wrapper"><i class="fa fa-envelope-o icon"></i>
+                  <p class="content">MHD.alhazmi@gmail.com</p>
+                </div>
+                <div class="icon-wrapper"><i class="fa fa-mobile icon"></i>
+                  <p class="content">+966 5555 39344</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="copyrights">Copy rights 2016 Mohammed Alhazmi</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- Latest compiled and minified Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Latest compiled and minified ScrollMgic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script><!-- Latest compiled and minified ScrollMgic Indicators -->
+    <script src="/https:/cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script><!-- Latest compiled and minified ScrollMgic GSAP Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script><!-- Latest compiled and minified GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script><!-- Latest compiled and minified GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script><!-- Latest compiled and minified Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script><!-- Latest compiled and minified CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script><!-- Slider Js -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script><!-- Isotope Js -->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script><!-- Slick Slider Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script><!-- Master JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
